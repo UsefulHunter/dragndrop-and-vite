@@ -1,0 +1,30 @@
+.motivators {
+  list-style: none;
+  padding-left: 0;
+}
+
+.motivators li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border: solid 2px #d0d0d0;
+  border-radius: 0.2em;
+  padding: 0.5em 0.8em 0.5em 0.5em;
+  margin-bottom: 1em;
+  height: 180px;
+  width: 180px;
+}
+
+.motivators h4 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.motivators p {
+  max-width: none;
+  margin: 0;
+  font-size: 12px;
+}
