@@ -17,17 +17,16 @@ const DragNDropComponent = (props) => {
     return <>
         <h1>Motivators</h1>
         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <Droppable droppableId="motivators">
+            <Droppable droppableId="motivators" direction="horizontal">
                 {(provided) => (
                     <ul className="motivators" {...provided.droppableProps} ref={provided.innerRef}>
-                    {motivators.map(({title, subTitle, classname}, index) => {
+                    {motivators.map(({title, subTitle,  imgsrc}, index) => {
                         return (
                             <Draggable key={title} draggableId={title} index={index}>
                                 {(provided) => (
                                     <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                    <h4 className={classname}>{title.toUpperCase()}</h4>
-                                    <p>{subTitle}</p>
-                                </li>
+                                        <img src={imgsrc} alt={subTitle}/>
+                                    </li>
                                 )}
                                 
                             </Draggable>

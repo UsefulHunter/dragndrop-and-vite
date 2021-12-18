@@ -1,18 +1,27 @@
 .motivators {
   list-style: none;
   padding-left: 0;
+  display: flex;
+}
+
+.motivators ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: grid;
 }
 
 .motivators li {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
   border: solid 2px #d0d0d0;
   border-radius: 0.2em;
-  padding: 0.5em 0.8em 0.5em 0.5em;
-  margin-bottom: 1em;
+  /* padding: 0.5em 0.8em 0.5em 0.5em;
+  margin-bottom: 1em; */
+  padding: 8 * 2;
+  margin: 0 8px 0 0;
   height: 180px;
   width: 180px;
+}
+.motivators li:hover {
+  border: solid 2px red;
 }
 
 .motivators h4 {
@@ -27,4 +36,10 @@
   max-width: none;
   margin: 0;
   font-size: 12px;
+}
+
+.motivators img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
