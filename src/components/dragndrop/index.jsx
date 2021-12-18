@@ -20,7 +20,7 @@ const DragNDropComponent = (props) => {
             <Droppable droppableId="motivators" direction="horizontal">
                 {(provided) => (
                     <ul className="motivators" {...provided.droppableProps} ref={provided.innerRef}>
-                    {motivators.map(({title, subTitle, classname, imgsrc}, index) => {
+                    {motivators.map(({title, subTitle,  imgsrc}, index) => {
                         return (
                             <Draggable key={title} draggableId={title} index={index}>
                                 {(provided) => (
