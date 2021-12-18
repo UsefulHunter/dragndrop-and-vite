@@ -20,13 +20,12 @@ const DragNDropComponent = (props) => {
             <Droppable droppableId="motivators">
                 {(provided) => (
                     <ul className="motivators" {...provided.droppableProps} ref={provided.innerRef}>
-                    {motivators.map(({title, subTitle, classname}, index) => {
+                    {motivators.map(({title, subTitle, classname, imgsrc}, index) => {
                         return (
                             <Draggable key={title} draggableId={title} index={index}>
                                 {(provided) => (
                                     <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                    <h4 className={classname}>{title.toUpperCase()}</h4>
-                                    <p>{subTitle}</p>
+                                    <img src={imgsrc} alt={title}/>
                                 </li>
                                 )}
                                 
