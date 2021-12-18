@@ -17,7 +17,7 @@ const DragNDropComponent = (props) => {
     return <>
         <h1>Motivators</h1>
         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <Droppable droppableId="motivators">
+            <Droppable droppableId="motivators" direction="horizontal">
                 {(provided) => (
                     <ul className="motivators" {...provided.droppableProps} ref={provided.innerRef}>
                     {motivators.map(({title, subTitle, classname, imgsrc}, index) => {
@@ -25,8 +25,8 @@ const DragNDropComponent = (props) => {
                             <Draggable key={title} draggableId={title} index={index}>
                                 {(provided) => (
                                     <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
-                                    <img src={imgsrc} alt={title}/>
-                                </li>
+                                        <img src={imgsrc} alt={subTitle}/>
+                                    </li>
                                 )}
                                 
                             </Draggable>
