@@ -1,67 +1,78 @@
+import aceitacao from "../../assets/cards/aceitacao.jpeg";
+import curiosidade from "../../assets/cards/curiosidade.jpeg";
+import honra from "../../assets/cards/honra.jpeg";
+import liberdade from "../../assets/cards/liberdade.jpeg";
+import maestria from "../../assets/cards/maestria.jpeg";
+import meta from "../../assets/cards/meta.jpeg";
+import ordem from "../../assets/cards/ordem.jpeg";
+import poder from "../../assets/cards/poder.jpeg";
+import relacao from "../../assets/cards/relacao.jpeg";
+import status from "../../assets/cards/status.jpeg";
+
 export const Motivators = [
   {
     title: "Aceitação",
     subTitle: "As pessoas ao redor aprovam o que eu faço e como eu sou",
     classname: "aceitacao",
-    imgsrc: `src/assets/cards/aceitacao.jpeg`,
+    imgsrc: aceitacao,
   },
   {
     title: "Curiosidade",
     subTitle: "Tenho muitas coisas para investigar e pensar",
     classname: "curiosidade",
-    imgsrc: `src/assets/cards/curiosidade.jpeg`,
+    imgsrc: curiosidade,
   },
   {
     title: "Meta",
     subTitle: "Meu propósito na vida reflete no trabalho que faço",
     classname: "meta",
-    imgsrc: `src/assets/cards/meta.jpeg`,
+    imgsrc: meta,
   },
   {
     title: "Status",
     subTitle:
       "Minha posição é boa e reconhecida pelas pessoas que trabalham comigo",
     classname: "status",
-    imgsrc: `src/assets/cards/status.jpeg`,
+    imgsrc: status,
   },
   {
     title: "Liberdade",
     subTitle:
       "Sou independente dos outros com meu trabalho e minhas responsabilidades",
     classname: "liberdade",
-    imgsrc: `src/assets/cards/liberdade.jpeg`,
+    imgsrc: liberdade,
   },
   {
     title: "Honra",
     subTitle:
       "Sinto orgulho de meus valores pessoais refletirem na forma como trabalho",
     classname: "honra",
-    imgsrc: `src/assets/cards/honra.jpeg`,
+    imgsrc: honra,
   },
   {
     title: "Ordem",
     subTitle: "Existem regras e políticas suficientes para um ambiente estável",
     classname: "ordem",
-    imgsrc: `src/assets/cards/ordem.jpeg`,
+    imgsrc: ordem,
   },
   {
     title: "Maestria",
     subTitle:
       "Meu trabalho desafia minha competência, mas ainda está dentro de minhas habilidades",
     classname: "maestria",
-    imgsrc: `src/assets/cards/maestria.jpeg`,
+    imgsrc: maestria,
   },
   {
     title: "Poder",
     subTitle:
       "Há espaço suficiente para eu influenciar o que acontece ao meu redor",
     classname: "poder",
-    imgsrc: `src/assets/cards/poder.jpeg`,
+    imgsrc: poder,
   },
   {
     title: "Relação",
     subTitle: "Tenho bons contatos sociais com as pessoas no meu trabalho",
     classname: "relacao",
-    imgsrc: `src/assets/cards/relacao.jpeg`,
+    imgsrc: relacao,
   },
 ];
