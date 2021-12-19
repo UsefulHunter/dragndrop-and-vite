@@ -3,6 +3,7 @@ import { Motivators } from '../../constants/motivators';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import './index.css'
 import './colors.css'
+import Header from '../header';
 const DragNDropComponent = (props) => {
     const [motivators, updateMotivators] = useState(Motivators);
     const handleOnDragEnd = (result) => {
@@ -15,7 +16,7 @@ const DragNDropComponent = (props) => {
     }
 
     return <>
-        <h1>Motivators</h1>
+        <Header />
         <DragDropContext onDragEnd={handleOnDragEnd}>
             <Droppable droppableId="motivators" direction="horizontal">
                 {(provided) => (

@@ -1,6 +1,6 @@
 {
-  "name": "vite-project",
-  "version": "0.5.1",
+  "name": "motivators-dragndrop",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
