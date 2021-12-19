@@ -4,7 +4,10 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import './index.css'
 import './colors.css'
 import Header from '../header';
+import useWindowDimensions from '../../utils/useWindowDimensions';
+
 const DragNDropComponent = (props) => {
+    const {width} = useWindowDimensions();
     const [motivators, updateMotivators] = useState(Motivators);
     const handleOnDragEnd = (result) => {
         if(!result.destination) return ;
@@ -13,12 +16,16 @@ const DragNDropComponent = (props) => {
         const [reorderedItem] = items.splice(result.source.index, 1);
         items.splice(result.destination.index, 0, reorderedItem);
         updateMotivators(items);
+        if(window.navigator.vibrate) {
+            window.navigator.vibrate(100);
+        }
     }
-
-    return <>
+    const droppableDirection = () => width < 768 ? 'vertical' : 'horizontal';
+    console.log(width)
+    return <div className='container'>
         <Header />
         <DragDropContext onDragEnd={handleOnDragEnd}>
-            <Droppable droppableId="motivators" direction="horizontal">
+            <Droppable droppableId="motivators" direction={droppableDirection()}>
                 {(provided) => (
                     <ul className="motivators" {...provided.droppableProps} ref={provided.innerRef}>
                     {motivators.map(({title, subTitle,  imgsrc}, index) => {
@@ -41,7 +48,7 @@ const DragNDropComponent = (props) => {
         
         </DragDropContext>
         
-    </>
+    </div>
 
 }
 
