@@ -7,13 +7,13 @@ const Header = () =>
         <h1 className="header__title">Motivadores</h1>
         <div className="header__info-container">
             <div className="header__info-side">
-            &#8592;{" - Importante"}
+            <span></span>&#8592;{" - Importante"}
             </div>
             <div className="header__info-middle">
                 Meus Motivadores
             </div>
             <div className="header__info-side">
-             {"+ Importante "}&#8594;
+             <span>{"+ Importante "}&#8594;</span>
             </div>
         </div>
     </header>
