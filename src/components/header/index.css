@@ -1,0 +1,29 @@
+.header__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.header__info-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__info-container > * {
+  margin: 0 0.5rem;
+}
+.header__info-side {
+  font-size: 48px;
+}
+
+.header__info-middle {
+  font-size: xx-large;
+  background-color: blue;
+  color: #fff;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+}
